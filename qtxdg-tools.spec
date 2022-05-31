@@ -7,6 +7,7 @@ URL: https://lxqt-project.org/
 License: LGPL-2.1
 Group: User Interface/Desktops
 BuildRequires: cmake(Qt5Core)
+BuildRequires: qmake5
 BuildRequires: cmake(qt5xdg) >= 3.9.1
 BuildRequires: cmake(lxqt-build-tools)
 BuildRequires: cmake ninja
