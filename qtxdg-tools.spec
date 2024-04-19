@@ -6,7 +6,12 @@ Summary: Tools for using xdg-utils with LXQt
 URL: https://lxqt-project.org/
 License: LGPL-2.1
 Group: User Interface/Desktops
+BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
+BuildRequires: cmake(Qt6CoreTools)
+BuildRequires: cmake(Qt6WidgetsTools)
+BuildRequires: cmake(Qt6DBusTools)
+BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(qt6xdg) >= 3.9.1
 BuildRequires: cmake(lxqt2-build-tools)
 BuildRequires: cmake ninja
