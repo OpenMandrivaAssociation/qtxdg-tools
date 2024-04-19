@@ -1,15 +1,14 @@
 Name: qtxdg-tools
-Version: 3.12.0
+Version: 4.0.0
 Release: 1
 Source0: https://github.com/lxqt/qtxdg-tools/releases/download/%{version}/qtxdg-tools-%{version}.tar.xz
 Summary: Tools for using xdg-utils with LXQt
 URL: https://lxqt-project.org/
 License: LGPL-2.1
 Group: User Interface/Desktops
-BuildRequires: cmake(Qt5Core)
-BuildRequires: qmake5
-BuildRequires: cmake(qt5xdg) >= 3.9.1
-BuildRequires: cmake(lxqt-build-tools)
+BuildRequires: cmake(Qt6Core)
+BuildRequires: cmake(qt6xdg) >= 3.9.1
+BuildRequires: cmake(lxqt2-build-tools)
 BuildRequires: cmake ninja
 
 %description
