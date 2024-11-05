@@ -1,5 +1,5 @@
 Name: qtxdg-tools
-Version: 4.0.0
+Version: 4.1.0
 Release: 1
 Source0: https://github.com/lxqt/qtxdg-tools/releases/download/%{version}/qtxdg-tools-%{version}.tar.xz
 Summary: Tools for using xdg-utils with LXQt
