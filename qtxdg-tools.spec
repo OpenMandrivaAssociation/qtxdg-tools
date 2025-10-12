@@ -1,6 +1,6 @@
 Name: qtxdg-tools
 Version: 4.2.0
-Release: 2
+Release: 3
 Source0: https://github.com/lxqt/qtxdg-tools/releases/download/%{version}/qtxdg-tools-%{version}.tar.xz
 Summary: Tools for using xdg-utils with LXQt
 URL: https://lxqt-project.org/
@@ -15,6 +15,9 @@ BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(qt6xdg) >= 3.9.1
 BuildRequires: cmake(lxqt2-build-tools)
 BuildRequires: cmake ninja
+
+%patchlist
+qtxdg-tools-qt-6.10.patch
 
 %description
 Tools for using xdg-utils with LXQt

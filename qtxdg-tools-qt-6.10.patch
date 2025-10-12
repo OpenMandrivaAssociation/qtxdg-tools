@@ -1,0 +1,12 @@
+diff -up qtxdg-tools-4.2.0/CMakeLists.txt.omv~ qtxdg-tools-4.2.0/CMakeLists.txt
+--- qtxdg-tools-4.2.0/CMakeLists.txt.omv~	2025-10-12 02:20:06.115985749 +0200
++++ qtxdg-tools-4.2.0/CMakeLists.txt	2025-10-12 02:20:14.447892174 +0200
+@@ -16,7 +16,7 @@ set(QTXDG_MINIMUM_VERSION "4.2.0")
+ set(QT_MINIMUM_VERSION "6.6.0")
+ 
+ find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+-find_package(Qt6 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Core)
++find_package(Qt6 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Core GuiPrivate)
+ find_package(Qt6Xdg ${QTXDG_MINIMUM_VERSION} REQUIRED)
+ 
+ include(GNUInstallDirs)             # Standard directories for installation
