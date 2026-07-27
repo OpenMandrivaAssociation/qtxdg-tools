@@ -34,7 +34,7 @@ cmake files for locating qtxdg-tools
 %autosetup -p1
 %build
 %cmake -G Ninja
-%ninja_build -C build
+%ninja_build
 
 %install
 %ninja_install -C build
