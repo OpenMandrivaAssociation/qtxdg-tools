@@ -1,11 +1,12 @@
 Name: qtxdg-tools
 Version: 4.4.0
-Release: 1
+Release: 2
 Source0: https://github.com/lxqt/qtxdg-tools/releases/download/%{version}/qtxdg-tools-%{version}.tar.xz
 Summary: Tools for using xdg-utils with LXQt
 URL: https://lxqt-project.org/
 License: LGPL-2.1
 Group: User Interface/Desktops
+BuildSystem: cmake
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6CoreTools)
@@ -14,7 +15,6 @@ BuildRequires: cmake(Qt6DBusTools)
 BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(qt6xdg) >= 3.9.1
 BuildRequires: cmake(lxqt2-build-tools)
-BuildRequires: ninja
 
 %patchlist
 qtxdg-tools-qt-6.10.patch
@@ -29,15 +29,6 @@ Requires: %{name} = %{EVRD}
 
 %description devel
 cmake files for locating qtxdg-tools
-
-%prep
-%autosetup -p1
-%build
-%cmake -G Ninja
-%ninja_build
-
-%install
-%ninja_install -C build
 
 %files
 %{_bindir}/qtxdg-mat
