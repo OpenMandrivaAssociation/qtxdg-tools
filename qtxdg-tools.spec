@@ -14,7 +14,7 @@ BuildRequires: cmake(Qt6DBusTools)
 BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(qt6xdg) >= 3.9.1
 BuildRequires: cmake(lxqt2-build-tools)
-BuildRequires: cmake ninja
+BuildRequires: ninja
 
 %patchlist
 qtxdg-tools-qt-6.10.patch
@@ -32,9 +32,8 @@ cmake files for locating qtxdg-tools
 
 %prep
 %autosetup -p1
-%cmake -G Ninja
-
 %build
+%cmake -G Ninja
 %ninja_build -C build
 
 %install
